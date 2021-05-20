@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pocetnaFragment">
+
+    <fragment
+        android:id="@+id/pocetnaFragment"
+        android:name="com.example.skica.PocetnaFragment"
+        android:label="pocetna"
+        tools:layout="@layout/pocetna" >
+        <action
+            android:id="@+id/action_pocetnaFragment_to_provjeraPreprekeFragment"
+            app:destination="@id/provjeraPreprekeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/provjeraPreprekeFragment"
+        android:name="com.example.skica.ProvjeraPreprekeFragment"
+        android:label="ProvjeraPreprekeFragment"
+        tools:layout="@layout/provjera_prepreke">
+        <action
+            android:id="@+id/action_provjeraPreprekeFragment_to_preprekaPronadjenaFragment"
+            app:destination="@id/preprekaPronadjenaFragment"
+            app:popUpTo="@id/provjeraPreprekeFragment" />
+        <action
+            android:id="@+id/action_provjeraPreprekeFragment_to_unosPodatakaFragment"
+            app:destination="@id/unosPodatakaFragment"
+            app:popUpTo="@id/provjeraPreprekeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preprekaPronadjenaFragment"
+        android:name="com.example.skica.PreprekaPronadjenaFragment"
+        android:label="PreprekaPronadjenaFragment"
+        tools:layout="@layout/prepreka_pronadjena">
+        <action
+            android:id="@+id/action_preprekaPronadjenaFragment_to_pocetnaFragment"
+            app:destination="@id/pocetnaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unosPodatakaFragment"
+        android:name="com.example.skica.UnosPodatakaFragment"
+        android:label="UnosPodatakaFragment"
+        tools:layout="@layout/unos_podataka">
+        <action
+            android:id="@+id/action_unosPodatakaFragment_to_prioritetiFragment2"
+            app:destination="@id/prioritetiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kontaktFragment"
+        android:name="com.example.skica.KontaktFragment"
+        android:label="KontaktFragment"
+        tools:layout="@layout/kontakt">
+        <action
+            android:id="@+id/action_kontaktFragment_to_pocetnaFragment"
+            app:destination="@id/pocetnaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sazetakPodatakaFragment"
+        android:name="com.example.skica.SazetakPodatakaFragment"
+        android:label="SazetakPodatakaFragment"
+        tools:layout="@layout/sazetak_podataka">
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument
+            android:name="datum_rodenja"
+            app:argType="string" />
+        <argument
+            android:name="jmbg"
+            app:argType="string" />
+        <argument
+            android:name="broj_telefona"
+            app:argType="string" />
+        <argument
+            android:name="vrsta_vakcine"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sazetakPodatakaFragment_to_terminVakcinacijeFragment"
+            app:destination="@id/terminVakcinacijeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prioritetiFragment"
+        android:name="com.example.skica.PrioritetiFragment"
+        android:label="PrioritetiFragment"
+        tools:layout="@layout/prioriteti">
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument android:name="datum_rodenja"
+            app:argType="string" />
+        <argument
+            android:name="jmbg"
+            app:argType="string" />
+        <argument
+            android:name="broj_telefona"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_prioritetiFragment_to_izborVakcineFragment"
+            app:destination="@id/izborVakcineFragment"
+            app:popUpTo="@id/izborVakcineFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/izborVakcineFragment"
+        android:name="com.example.skica.IzborVakcineFragment"
+        android:label="izbor_vakcine"
+        tools:layout="@layout/izbor_vakcine" >
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument
+            android:name="datum_rodenja"
+            app:argType="string" />
+        <argument
+            android:name="broj_telefona"
+            app:argType="string" />
+        <argument
+            android:name="jmbg"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_izborVakcineFragment_to_sazetakPodatakaFragment"
+            app:destination="@id/sazetakPodatakaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/terminVakcinacijeFragment"
+        android:name="com.example.skica.TerminVakcinacijeFragment"
+        tools:layout="@layout/termin_vakcinacije"
+        android:label="TerminVakcinacijeFragment" >
+        <action
+            android:id="@+id/action_terminVakcinacijeFragment_to_kontaktFragment"
+            app:destination="@id/kontaktFragment" />
+    </fragment>
+</navigation>

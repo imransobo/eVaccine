@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Vakcinacija</string>
+    <string name="pocetna_tekst">Dobro došli \nZapočnite sa prijavom</string>
+    <string name="kreni">Kreni</string>
+    <string name="provjera_prepreka_tekst">Poštovanje, \nprije nego krenete sa prijavom za vakcinaciju, molimo obratite pažnju na sljedeće prepreke te ukoliko imate
+        neku od prepreka odaberite dugme NE, a u suprotnom dugme DA:
+    </string>
+    <string name="ne">Ne</string>
+    <string name="sazetak_podataka_vakcina"></string>
+    <string name="termin_vakcinacije_lokacija">Lokacija</string>
+    <string name="da">Da</string>
+    <string name="prepreka_tekst">Poštovani Korisniče, \nprilikom prijave naznačeno je da imate prepreku te
+    da se ne možete prijaviti za vakcinaciju. Kada steknete uslove za prijavu ponovne posjetite aplikaciju.</string>
+    <string name="na_pocetnu">Početna</string>
+    <string name="izlaz">Izlaz</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="sazetak_pod_vakcina">Vrsta vakcine</string>
+    <string name="broj_vakcinisanih">7245</string>
+    <string name="idi_na_pocetnu">Početna</string>
+    <string name="dugme_izlaz">Izlaz</string>
+    <string name="dugmePodijeli">Podijeli</string>
+    <string name="datum_rodjenja">Datum rođenja</string>
+    <string name="jmbg">JMBG</string>
+    <string name="br_telefona">Broj telefona</string>
+    <string name="dalje">Dalje</string>
+    <string name="prior_tekst">Ukoliko pripadate nekoj prioritetnoj grupi, odaberite istu</string>
+    <string name="med_radnik">Medicinski radnik</string>
+    <string name="hron_bolesnik">Hronični bolesnik</string>
+    <string name="boravak_dom">Boravak sa ugroženom grupom</string>
+    <string name="vakcina_tekst">Odaberite vakcinu</string>
+    <string name="pfitzer">Pfitzer</string>
+    <string name="astra_zeneca">Astra-zeneca</string>
+    <string name="sputnik">Sputnik V</string>
+    <string name="vasi_podaci">Vaši podaci</string>
+    <string name="ime_tv">Ime</string>
+    <string name="prezime_tv">Prezime</string>
+    <string name="godine">Datum rođenja</string>
+    <string name="broj_telefona">Broj telefona</string>
+    <string name="ok">OK</string>
+    <string name="termin_tekst">Čestitamo, \nvaš termin vakcinacije se nalazi ispod</string>
+    <string name="termin">Poštovani, \nmolimo da se pridržavate svih epidemioloških mjera da bi vakcinacija prošla u najboljem redu</string>
+    <string name="datum_termin">Datum: DD.MM.GGGG</string>
+    <string name="vrijeme_termin">Vrijeme: SS:MM</string>
+    <string name="u_redu">U redu</string>
+    <string name="provjera_prepreke_tekst2">- pozitivni ste na Covid-19\n- trudnica ste</string>
+    <string name="unos_podataka_tekst">Unesite vaše podatke</string>
+    <string name="lice_starije_od_65">Lice starosti preko 65 godina</string>
+    <string name="ne_pripadam">Ne pripadam</string>
+    <string name="moderna">Moderna</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kontakt_naslov">Kontaktirajte nas</string>
+    <string name="kontakt_tekst">Ukoliko imate nejasnoća u vezi korištenja aplikacije ili nekih drugih nejasnoća pozovite broj\n091111222\nTakođer možete nas posjetiti
+    ukoliko je to neophodno ili zatraženo na adresi\nZmaja od Bosne 33-35 </string>
+    <string name="kontakt">Kontakt</string>
+    <string name="vakcinisaniTrenutno">Trenutni broj vakcinisanih građana:</string>
+    <string name="pocetna_dugme_us">US</string>
+    <string name="pocetna_dugme_ba">BA</string>
+</resources>

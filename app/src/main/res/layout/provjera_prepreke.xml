@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10dp">
+
+    <TextView
+        android:id="@+id/provjera_prepreke_tekst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provjera_prepreka_tekst"
+        android:textAlignment="viewStart"
+        android:textColor="@color/tekst_boja"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/provjera_prepreke_dugme_ne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/dugme_sirina"
+        android:text="@string/ne"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provjera_prepreke_tekst2"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Button
+        android:id="@+id/provjera_prepreke_dugme_da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/dugme_sirina"
+        android:text="@string/da"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provjera_prepreke_tekst2"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <TextView
+        android:id="@+id/provjera_prepreke_tekst2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provjera_prepreke_tekst2"
+        android:textColor="@color/tekst_boja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/provjera_prepreke_tekst1"
+        app:layout_constraintVertical_bias="0.062" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

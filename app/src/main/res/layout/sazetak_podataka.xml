@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_10dp">
+
+
+        <TextView
+            android:id="@+id/sazetak_podataka_ime_prezime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jmbg"
+            android:textColor="@color/tekst_boja"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sazetak_podataka_naslov"
+            app:layout_constraintVertical_bias="0.463" />
+
+        <TextView
+            android:id="@+id/sazetak_podataka_telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/broj_telefona"
+            android:textColor="@color/tekst_boja"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sazetak_podataka_godine"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <TextView
+            android:id="@+id/sazetak_podataka_godine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/godine"
+            android:textColor="@color/tekst_boja"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sazetak_podataka_jmbg"
+            app:layout_constraintVertical_bias="0.08" />
+
+        <TextView
+            android:id="@+id/sazetak_podataka_naslov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vasi_podaci"
+            android:textColor="@color/tekst_boja"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <TextView
+            android:id="@+id/sazetak_podataka_ime_prezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ime_tv"
+            android:textColor="@color/tekst_boja"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sazetak_podataka_naslov"
+            app:layout_constraintVertical_bias="0.029" />
+
+        <TextView
+            android:id="@+id/sazetak_podataka_jmbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prezime_tv"
+            android:textColor="@color/tekst_boja"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sazetak_podataka_ime_prezime"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <Button
+            android:id="@+id/sazetak_podataka_dugme_dalje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/dugme_sirina"
+            android:text="@string/dalje"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sazetak_podataka_telefon"
+            app:layout_constraintVertical_bias="0.778" />
+
+        <TextView
+            android:id="@+id/sazetak_pod_vakcina"
+            android:layout_width="389dp"
+            android:layout_height="29dp"
+            android:text="@string/sazetak_pod_vakcina"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.622" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

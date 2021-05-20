@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10dp">
+
+    <TextView
+        android:id="@+id/termin_vakcinacije_naslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/termin_tekst"
+        android:textAlignment="center"
+        android:textColor="@color/tekst_boja"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/termin_vakcinacije_napomena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/termin"
+        android:textAlignment="center"
+        android:textColor="@color/tekst_boja"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termin_vakcinacije_vrijeme"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <TextView
+        android:id="@+id/termin_vakcinacije_datum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datum_termin"
+        android:textColor="@color/tekst_boja"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termin_vakcinacije_naslov"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/termin_vakcinacije_vrijeme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vrijeme_termin"
+        android:textColor="@color/tekst_boja"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termin_vakcinacije_datum"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/termin_vakcinacije_dugme_uredu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="@dimen/dugme_sirina"
+        android:text="@string/u_redu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termin_vakcinacije_napomena"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/termin_vakcinacije_lokacija"
+        android:layout_width="387dp"
+        android:layout_height="29dp"
+        android:text="@string/termin_vakcinacije_lokacija"
+        android:textColor="@color/tekst_boja"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/vakcinisani_trenutno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vakcinisaniTrenutno"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <TextView
+        android:id="@+id/termin_vakcinacije_broj_vakcinisanih"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:text="@string/broj_vakcinisanih"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
